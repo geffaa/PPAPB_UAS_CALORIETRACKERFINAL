@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_getstarted"
+        android:label="CalorieTracker"
+        android:roundIcon="@drawable/logocalorie"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PPAPB_UAS"
+        tools:targetApi="33">
+        <activity
+            android:name=".BottomNavActivity"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuUser.ChooseMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuUser.AddFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStarted.GetStartedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Auth.AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminEditFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminAddFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+        </activity>
+    </application>
+
+</manifest>

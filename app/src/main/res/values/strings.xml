@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CalorieCareUAS</string>
+    <string name="start">get started</string>
+    <string name="start_text_advice">By continuing on this application you agree to our Terms of Use and Privacy Policy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome_page1_title">Maintain your calories \n and stay healthy!</string>
+    <string name="welcome_page2_title">Maintain your calories and stay healthy!</string>
+    <string name="welcome_page1_content">Join us in tracking your calorie intake \n effortlessly with our user-friendly calorie \n counting app. Start today and take control \n of your fitness journey</string>
+
+    <string name="title_onboarding_1">Maintain your calories \n and stay healthy!</string>
+    <string name="description_onboarding_1">Join us in tracking your calorie intake effortlessly with our user-friendly calorie counting app. Start today and take control of your fitness journey</string>
+    <string name="title_onboarding_2">Scan your food and \n know it’s calories</string>
+    <string name="description_onboarding_2">Join us in effortlessly tracking your calorie intake with our user-friendly calorie counting app. Start today and take control of your fitness journey by scanning your food and knowing its calories instantly!</string>
+
+    <string name="title_onboarding_3"> Track your weight gain, \n loss statics here </string>
+    <string name="description_onboarding_3">Track the Statistics of Your Weight Gain and Loss Here! Welcome to Our App, the Best Place to Manage Your Health Journey</string>
+
+
+
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="isi_data">Isi data di bawah ini dengan benar!</string>
+
+
+</resources>

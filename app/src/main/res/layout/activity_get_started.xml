@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GetStarted.GetStartedActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISI DATA BERIKUT"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Nama Lengkap"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Masukkan nama lengkap Anda"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Berat Badan Sekarang"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_bbsekarang"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukkan berat badan sekarang"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_satuan_berat_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown">
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Berat Badan Target"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_bbtarget"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukkan berat badan sekarang"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_satuan_berat_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Tinggi Badan"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_tinggibadan"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukkan tinggi badan (cm)"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Tujuan Diet"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerTujuanDiet"
+                android:layout_width="390dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="20dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Jumlah Maksimum Kalori Harian"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_maksimumkalori"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/color_hint"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukkan Jumlah Maksimum Kalori"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerMaksimumKalori"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Tanggal Target"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/datePickerTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/baseline_date_range_24"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/color_hint"
+            android:hint="Tanggal Target Capaian"
+            app:boxBackgroundMode="filled"
+            android:layout_marginLeft="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gsdatePickerTextInputEditText"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="140dp"
+            android:layout_height="44dp"
+            android:text="SUBMIT"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_submit"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="230dp">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

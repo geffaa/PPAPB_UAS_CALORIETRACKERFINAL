@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
+    android:background="@color/blue_500"
+    tools:context=".Admin.AdminAddFoodActivity">
+
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Makanan"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="@dimen/margin_large"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Makanan"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="40dp">
+    </TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Nama Makanan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/admin_add_et_food_name"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_et"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Kalori"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Kalori Makanan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/admin_add_et_food_calorie"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_et"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:layout_marginTop="20dp"
+        android:id="@+id/admin_add_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="60dp"
+        android:id="@+id/admin_add_bt_submit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Tambah"/>
+
+</LinearLayout>

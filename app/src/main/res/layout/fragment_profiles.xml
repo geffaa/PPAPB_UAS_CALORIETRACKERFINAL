@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_400">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profile"
+                            android:textSize="@dimen/text_size_xlager"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"/>
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/pro_lin2"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="70dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/fr_profile_tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Yodhimas Geffananda"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginTop="@dimen/margin_large"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_margin="@dimen/margin_large"
+                            android:layout_height="85dp"
+                            card_view:cardBackgroundColor="#FFF"
+                            card_view:layout_anchorGravity="center|bottom"
+                            card_view:cardCornerRadius="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_centerVertical="true"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+
+                                                    android:textAlignment="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="12sp"
+                                                    android:text="Height (cm)"/>
+
+                                                <TextView
+                                                    android:id="@+id/fr_profile_tv_height"
+                                                    android:fontFamily="@font/montserrat_bold"
+                                                    android:textColor="@color/md_grey_700"
+                                                    android:layout_width="match_parent"
+                                                    android:textAlignment="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/text_size_xlager"
+                                                    android:text="180 "/>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:textAlignment="center"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:textSize="12sp"
+                                                    android:text="Weight (kg)"/>
+
+                                                <TextView
+                                                    android:id="@+id/fr_profile_tv_weight"
+                                                    android:fontFamily="@font/montserrat_bold"
+                                                    android:textColor="@color/md_grey_700"
+                                                    android:layout_width="match_parent"
+                                                    android:textAlignment="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/text_size_xlager"
+                                                    android:text="60"/>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:text="Target Weight (kg)"
+                                                    android:textAlignment="center"
+                                                    android:textSize="12sp" />
+
+                                                <TextView
+                                                    android:id="@+id/fr_profile_tv_targetweight"
+                                                    android:fontFamily="@font/montserrat_bold"
+                                                    android:textColor="@color/md_grey_700"
+                                                    android:layout_width="match_parent"
+                                                    android:textAlignment="center"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/text_size_xlager"
+                                                    android:text="70"/>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/pro_rl_keluar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="370dp"
+                                android:background="@color/md_red_700">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:padding="30dp"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat"
+                                        android:textSize="@dimen/text_size_medium"
+                                        android:text="Log Out"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_height="24dp"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </ScrollView>
+</RelativeLayout>
